@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name" translatable="false">MVVM Template</string>
+
+    <string name="base_url" translatable="false">http://dapi-poribohon-lagbe.herokuapp.com/</string>
+
+    <string name="skip">SKIP</string>
+    <string name="next">Next</string>
+    <string name="enter_phone">Enter phone number</string>
+    <string name="welcome_app">A Sample App Built in MVVM Architecture.</string>
+    <string name="welcome_back">Welcome</string>
+    <string name="invalid_otp">Invalid OTP/Unauthenticated User</string>
+    <string name="confirm">Confirm</string>
+    <string name="resend_otp"><u>Resend OTP</u></string>
+    <string name="enter_otp"><u>Please insert code below</u></string>
+    <string name="verification">OTP VERIFICATION</string>
+    <string name="otp_time">05:00</string>
+    <string name="otp_text">You will get SMS with a confirmation code to this number. Expiration of the code is 5 minutes</string>
+    <string name="login_page"><u>Login</u></string>
+    <string name="delete">Delete</string>
+
+</resources>
