@@ -64,12 +64,12 @@ class LoginFragment : Fragment() {
     private fun generateOtp(userPhone: String) {
         otpViewModel.testFunction(OtpRequest(userPhone))
 
-        otpViewModel.testResponse.observe(this) {
+        otpViewModel.testResponse.observe(viewLifecycleOwner) {
             val value = it
             Log.i("response_value", "$value")
         }
 
-        otpViewModel.errorMessage.observe(this) {
+        otpViewModel.errorMessage.observe(viewLifecycleOwner) {
             Log.i("error_message", it)
         }
     }
