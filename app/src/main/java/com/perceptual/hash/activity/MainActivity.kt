@@ -5,9 +5,9 @@ import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.image.perceptual_hash.utils.ImagePerceptualHash
 import com.perceptual.hash.R
 import com.perceptual.hash.databinding.ActivityMainBinding
-import com.perceptual.hash.utils.ImagePerceptualHash
 
 class MainActivity : AppCompatActivity() {
 

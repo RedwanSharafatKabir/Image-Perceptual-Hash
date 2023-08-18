@@ -1,4 +1,4 @@
-package com.perceptual.hash.utils
+package com.image.perceptual_hash.utils
 
 import android.graphics.Bitmap
 import android.util.Log
@@ -42,7 +42,7 @@ object ImagePerceptualHash{
     private lateinit var finalResult: IntArray
 
     fun setData(imageBitmap: Bitmap, bits: Int){
-        this.bits = bits
+        ImagePerceptualHash.bits = bits
 
         when (bits) {
             8 -> bitSize = 64
