@@ -10,7 +10,9 @@ import kotlin.math.abs
 import kotlin.math.ceil
 import kotlin.math.floor
 
-class ImagePerceptualHash{
+class ImagePerceptualHash(
+    private val imageBitmap: Bitmap
+){
 
     private var blockWidth: Double ?= null
     private var blockHeight: Double ?= null
@@ -41,8 +43,8 @@ class ImagePerceptualHash{
     private lateinit var blocks: Array<DoubleArray>
     private lateinit var finalResult: IntArray
 
-    fun setData(imageBitmap: Bitmap, bits: Int){
-        ImagePerceptualHash().bits = bits
+    fun setData(bits: Int){
+        this.bits = bits
 
         when (bits) {
             8 -> bitSize = 64
@@ -52,10 +54,10 @@ class ImagePerceptualHash{
         finalResult = IntArray(bitSize)
         blocks = Array(bits) { DoubleArray(bits) }
 
-        createModifiedBitmap(imageBitmap)
+        createModifiedBitmap()
     }
 
-    private fun createModifiedBitmap(imageBitmap: Bitmap){
+    private fun createModifiedBitmap(){
         val modifiedBitmap: Bitmap = Bitmap.createScaledBitmap(imageBitmap, 419, 207, false)
         wid = modifiedBitmap.width
         hei = modifiedBitmap.height
