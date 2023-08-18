@@ -1,2 +1,2 @@
-rootProject.name = "Sample-MVVM"
+rootProject.name = "Image-Perceptual-Hash"
 include ':app'
