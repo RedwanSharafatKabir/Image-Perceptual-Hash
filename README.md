@@ -21,7 +21,7 @@
   ```
   
   dependencies {
-          implementation 'com.github.RedwanSharafatKabir:Image-Perceptual-Hash:Tag'
+          implementation 'com.github.RedwanSharafatKabir:Image-Perceptual-Hash:1.0.1'
   }
   
   ```
