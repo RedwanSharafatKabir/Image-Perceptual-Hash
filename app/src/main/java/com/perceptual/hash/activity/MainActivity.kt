@@ -21,11 +21,13 @@ class MainActivity : AppCompatActivity() {
 
         bitmap = BitmapFactory.decodeResource(resources, R.drawable.sample_image)
 
-        ImagePerceptualHash.setData(bitmap, 8)
-        val hashResult8Bit = ImagePerceptualHash.getHash()
+//        val obj = ImagePerceptualHash()
 
-        ImagePerceptualHash.setData(bitmap, 16)
-        val hashResult16Bit = ImagePerceptualHash.getHash()
+        ImagePerceptualHash().setData(bitmap, 8)
+        val hashResult8Bit = ImagePerceptualHash().getHash()
+
+        ImagePerceptualHash().setData(bitmap, 16)
+        val hashResult16Bit = ImagePerceptualHash().getHash()
 
         Log.i("hashResult8Bit_obj", hashResult8Bit)
         Log.i("hashResult16Bit_obj", hashResult16Bit)
