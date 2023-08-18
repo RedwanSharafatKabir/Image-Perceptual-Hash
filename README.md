@@ -29,12 +29,12 @@
 * <b>Step 3:</b> Dig in code:
 
   First, you need to create or get the <b>bitmap</b> of your desired image file.
-  Then, pass the <b>bitmap</b> and bit size as arguments to <b>setData</b> function of <b>ImagePerceptualHash</b> object.
+  Then, pass the <b>bitmap</b> and bit size as arguments to <b>setData</b> function of <b>ImagePerceptualHash</b> class.
   
   * To create the 8-bit hash use the below code:<br><br>
     ```
 
-    ImagePerceptualHash.setData(bitmap, 8)  // 8 is bit size
+    ImagePerceptualHash().setData(bitmap, 8)  // 8 is bit size
     
     ```
   <br>
@@ -42,7 +42,7 @@
   * To create the 16-bit hash use the below code:<br><br>
     ```
 
-    ImagePerceptualHash.setData(bitmap, 16)  // 16 is bit size
+    ImagePerceptualHash().setData(bitmap, 16)  // 16 is bit size
 
     ```
   <br>
@@ -50,7 +50,7 @@
   * To get the hash result of the image use the below code (for both 8-bit and 16-bit hash):<br><br>
     ```
 
-    ImagePerceptualHash.getHash()
-    val hashRsult = ImagePerceptualHash.getHash()
+    ImagePerceptualHash().getHash()
+    val hashRsult = ImagePerceptualHash().getHash()
 
     ```
