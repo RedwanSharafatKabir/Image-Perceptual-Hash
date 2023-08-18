@@ -17,7 +17,7 @@
   
   ```
 <br><br>
-* <b>Step 2:</b> Add the dependency in root "/app/build.gradle":<br>
+* <b>Step 2:</b> Add the dependency in root "/app/build.gradle":<br><br>
   ```
   
   dependencies {
@@ -54,4 +54,3 @@
     val hashRsult = ImagePerceptualHash.getHash()
 
     ```
-    
