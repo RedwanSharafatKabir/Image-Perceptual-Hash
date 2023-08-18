@@ -1,3 +1,4 @@
+
 rootProject.name = "Image-Perceptual-Hash"
 include ':app'
 include ':image_perceptual_hash'
