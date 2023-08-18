@@ -34,7 +34,7 @@
   * To create the 8-bit hash use the below code:<br><br>
     ```
 
-    ImagePerceptualHash.setData(bitmap, 8)
+    ImagePerceptualHash.setData(bitmap, 8)  // 8 is bit size
     
     ```
   <br>
@@ -42,7 +42,7 @@
   * To create the 16-bit hash use the below code:<br><br>
     ```
 
-    ImagePerceptualHash.setData(bitmap, 16)
+    ImagePerceptualHash.setData(bitmap, 16)  // 16 is bit size
 
     ```
   <br>
